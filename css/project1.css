@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    font-size: 14px;
+}
+
+header {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 0;
+    color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+    padding-left: 35px;
+}
+
+.container h2::before {
+    content: "｜";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.poster {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.description h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    color: #555;
+    position: relative;
+    padding-left: 25px;
+}
+
+.description h3::before {
+    content: "｜";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    color: #555;
+    font-weight: bold;
+}
+
+.description p,
+.description ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.image-gallery {
+    padding: 20px;
+    text-align: left;
+}
+
+.image-item {
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    display: block;
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+
+.image-caption {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    text-decoration: none;
+    background: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    width: 200px;
+}

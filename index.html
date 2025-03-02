@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+       .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+       .category {
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 10px;
+            padding-left: 10px;
+            border-left: 5px solid #333;
+        }
+
+       .project {
+            position: relative;
+            width: 300px;
+        }
+
+       .project img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+       .project h3 {
+            position: absolute;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+       .project:nth-child(1) h3,
+       .project:nth-child(2) h3,
+       .project:nth-child(3) h3,
+       .project:nth-child(5) h3 {
+            bottom: 10px;
+            left: 10px;
+        }
+
+       .project:nth-child(4) h3 {
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>张轩的作品集</h1>
+        <p>环境艺术设计 | 数字媒体 | AI 绘画</p>
+    </header>
+
+    <section>
+        <div class="category">环境艺术设计</div>
+        <div class="gallery">
+            <div class="project" onclick="location.href='project1.html'">
+                <img src="p1.jpg" alt="项目1">
+                <h3>项目 1</h3>
+            </div>
+            <div class="project" onclick="location.href='project2.html'">
+                <img src="p2.jpg" alt="项目2">
+                <h3>项目 2</h3>
+            </div>
+            <div class="project" onclick="location.href='project3.html'">
+                <img src="p3.jpg" alt="项目3">
+                <h3>项目 3</h3>
+            </div>
+            <div class="project" onclick="location.href='project4.html'">
+                <img src="p4.jpg" alt="项目4">
+                <h3>项目 4</h3>
+            </div>
+            <div class="project" onclick="location.href='project5.html'">
+                <img src="p5.jpg" alt="项目5">
+                <h3>项目 5</h3>
+            </div>
+        </div>
+
+        <div class="category">景观设计</div>
+        <div class="gallery">
+            <div class="project" onclick="location.href='project6.html'">
+                <img src="a1.jpg" alt="景观1">
+                <h3>景 1</h3>
+            </div>
+            <div class="project" onclick="location.href='project7.html'">
+                <img src="a2.jpg" alt="景观2">
+                <h3>景 2</h3>
+            </div>
+            <div class="project" onclick="location.href='project8.html'">
+                <img src="a3.jpg" alt="景观3">
+                <h3>景 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
