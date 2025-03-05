@@ -1,232 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UE 未来风城市项目展示</title>
-    <style>
-        /* 全局样式 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f4;
-        }
-
-        /* 顶部导航栏 */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-        }
-
-        header a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        /* 主标题区域 */
-       .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-        }
-
-       .hero-logo {
-            width: 300px;
-        }
-
-       .hero-logo img {
-            width: 100%;
-        }
-
-       .hero-image {
-            width: 50%;
-        }
-
-       .hero-image img {
-            width: 100%;
-        }
-
-        /* 项目展示区域 */
-       .projects {
-            padding: 0 50px 50px;
-        }
-
-       .project-item {
-            margin-bottom: 50px;
-        }
-
-       .project-item h3 {
-            margin-bottom: 10px;
-            /* 适当减小项目标题字体大小 */
-            font-size: 18px; 
-        }
-
-       .project-item h3 span {
-            /* 让箭头变薄 */
-            font-weight: 100; 
-        }
-
-       .project-item a {
-            float: right;
-            color: #666;
-            text-decoration: none;
-            /* 适当减小链接字体大小 */
-            font-size: 14px; 
-        }
-
-       .project-item img {
-            width: 100%;
-        }
-
-        /* 关于区域 */
-       .about {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            padding: 50px;
-            background-color: #fff;
-        }
-
-       .about-text {
-            width: 50%;
-        }
-
-       .about-text h2 {
-            margin-bottom: 20px;
-        }
-
-       .about-text p {
-            margin-bottom: 20px;
-            /* 适当减小段落文字字体大小 */
-            font-size: 14px; 
-        }
-
-       .about-text a {
-            color: #666;
-            text-decoration: none;
-            /* 适当减小链接字体大小 */
-            font-size: 14px; 
-        }
-
-       .about-text a span {
-            /* 让箭头变薄 */
-            font-weight: 100; 
-        }
-
-       .about-image {
-            width: 50%;
-        }
-
-       .about-image img {
-            width: 100%;
-        }
-
-        /* 页脚 */
-        footer {
-            padding: 20px 50px;
-            text-align: center;
-            color: #666;
-            /* 适当减小页脚文字字体大小 */
-            font-size: 14px; 
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>个人作品集 - 红白社区设计</title>
 </head>
 
 <body>
-    <!-- 顶部导航 -->
+    <!-- 顶部导航栏 -->
     <header>
-        <a href="#">UE 未来风城市项目</a>
-        <div>
-            <a href="#">项目详情</a>
-            <a href="#">相关报道</a>
-            <a href="#">关于项目</a>
-            <a href="#">联系我们</a>
-        </div>
+        <a href="#" class="back-button">返回</a>
+        <div class="portfolio-title">个人作品集</div>
     </header>
 
-    <!-- 主标题区域 -->
-    <section class="hero">
-        <div class="hero-logo">
-            <img src="logo.png" alt="UE 未来风城市项目 Logo">
+    <!-- 内容主体 -->
+    <main>
+        <!-- 面包屑导航 -->
+        <div class="breadcrumb">
+            <a href="#">首页</a> > <a href="#">红白社区设计</a>
         </div>
-        <div class="hero-image">
-            <img src="p1.jpg" alt="未来风城市主图">
+        <h1>欢悦教堂 / Department of Architecture co.</h1>
+        <div class="actions">
+            <button class="favorite">收藏项目</button>
         </div>
-    </section>
+        <!-- 主图片展示区域 -->
+        <div class="main-image">
+            <img src="2.jpg" alt="欢悦教堂">
+            <div class="thumbnail-container">
+                <img src="3.jpg" alt="缩略图1">
+                <img src="4.jpg" alt="缩略图2">
+                <img src="5.jpg" alt="缩略图3">
+                <img src="6.jpg" alt="缩略图4">
+                <div class="thumbnail-more">+ 14</div>
+            </div>
+        </div>
+        <!-- 项目信息 -->
+        <div class="project-info">
+            <p>审稿编辑 Miwa Negoro</p>
+            <p>教堂·曼谷，泰国</p>
+            <p>建筑师: Department of Architecture co.</p>
+            <p>面积: 500 m²</p>
+            <!-- 开始添加文字和图片循环 -->
+            <div class="text-image-section">
+                <p>欢悦教堂坐落于曼谷的繁华地带，它不仅仅是一座宗教建筑，更是艺术与信仰的完美融合。教堂的外观设计独特，采用了现代与传统相结合的风格，高耸的尖顶在阳光的照耀下熠熠生辉，仿佛在向人们传达着神圣的信息。走进教堂内部，精美的壁画和雕塑让人目不暇接，每一处细节都彰显着建筑师的匠心独运。这里，宗教仪式与文化活动相得益彰，吸引了众多信徒和游客前来参观。</p>
+                <img src="3.jpg" alt="复用图片1">
+            </div>
+            <div class="text-image-section">
+                <p>教堂的建筑材料选用了当地的优质石材和木材，不仅体现了地域特色，还保证了建筑的坚固耐用。内部的空间布局合理，宽敞明亮的大厅可以容纳大量的信徒，而私密的祈祷室则为人们提供了一个安静的心灵净土。此外，教堂还配备了先进的音响和灯光设备，为宗教仪式和文艺演出提供了良好的条件。</p>
+                <img src="4.jpg" alt="复用图片2">
+            </div>
+            <div class="text-image-section">
+                <p>在宗教意义上，欢悦教堂是信徒们精神寄托的重要场所。每周都会举行各种宗教仪式，如弥撒、祈祷会等，让人们在忙碌的生活中找到心灵的慰藉。同时，教堂也积极参与社会公益活动，为当地的贫困人群提供帮助和支持，体现了宗教的慈悲和关爱。</p>
+                <img src="5.jpg" alt="复用图片3">
+            </div>
+            <div class="text-image-section">
+                <p>从建筑艺术的角度来看，欢悦教堂是曼谷建筑风格的一个缩影。它的设计灵感来源于泰国的传统文化和宗教信仰，同时融入了现代建筑的元素，形成了独特的艺术风格。无论是建筑的外观还是内部装饰，都充满了艺术气息，让人感受到了宗教与艺术的魅力。</p>
+                <img src="6.jpg" alt="复用图片4">
+            </div>
+            <div class="text-image-section">
+                <p>随着时间的推移，欢悦教堂已经成为了曼谷的一个标志性建筑。它见证了城市的发展和变迁，也承载了人们的信仰和情感。未来，教堂将继续发挥其宗教和文化的作用，为更多的人带来精神上的满足和启示。</p>
+                <img src="2.jpg" alt="复用图片5">
+            </div>
+        </div>
 
-    <!-- 项目展示区域 -->
-    <section class="projects">
-        <h2>项目详情</h2>
-        <div class="project-item">
-            <h3>UE 未来风城市全景 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1.jpg" alt="未来风城市全景图">
+        <!-- 推荐区域 -->
+        <div class="recommended">
+            <h2>猜你喜欢</h2>
+            <div class="recommended-item">
+                <img src="7.jpg" alt="推荐项目1">
+                <div class="recommended-text">
+                    <h3>冰川水装瓶工厂 / Panorama Arquitectos</h3>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="8.jpg" alt="推荐项目2">
+                <div class="recommended-text">
+                    <h3>夯土技术，春武里府大楼 / SUPHASIDH</h3>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <!-- 这里若只有 8 张图，可复用前面的图，你可按需修改 -->
+                <img src="7.jpg" alt="推荐项目3">
+                <div class="recommended-text">
+                    <h3>交易广场公园 / DSDHA</h3>
+                </div>
+            </div>
         </div>
-        <div class="project-item">
-            <h3>未来风城市交通枢纽 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1/1.jpg" alt="未来风城市交通枢纽图">
+        <div class="more-churches">
+            <h2>更多教堂</h2>
+            <div class="recommended-item">
+                <img src="3.jpg" alt="教堂项目1">
+                <div class="recommended-text">
+                    <h3>新使徒教堂，对角线构筑"翅膀" / LOCALARCHITECTURE</h3>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="4.jpg" alt="教堂项目2">
+                <div class="recommended-text">
+                    <h3>永宗岛恩诺里教堂 / shinslab architecture</h3>
+                </div>
+            </div>
+            <a href="#" class="more-link">更多教堂 »</a>
         </div>
-        <div class="project-item">
-            <h3>未来风城市中央公园 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1/2.jpg" alt="未来风城市中央公园图">
-        </div>
-        <div class="project-item">
-            <h3>未来风城市智能建筑 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1/3.jpg" alt="未来风城市智能建筑图">
-        </div>
-        <div class="project-item">
-            <h3>未来风城市空中步道 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1/4.jpg" alt="未来风城市空中步道图">
-        </div>
-        <div class="project-item">
-            <h3>未来风城市能源中心 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1/5.jpg" alt="未来风城市能源中心图">
-        </div>
-        <div class="project-item">
-            <h3>未来风城市商业街区 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1/6.jpg" alt="未来风城市商业街区图">
-        </div>
-        <div class="project-item">
-            <h3>未来风城市住宅区域 <span>&#9660;</span></h3>
-            <a href="#">查看详情</a>
-            <img src="p1/7.jpg" alt="未来风城市住宅区域图">
-        </div>
-    </section>
+    </main>
 
-    <!-- 关于区域 -->
-    <section class="about">
-        <div class="about-text">
-            <h2>项目介绍</h2>
-            <p>在虚幻引擎（UE）强大功能的支持下，我们精心搭建了这座极具前瞻性的未来风城市。团队成员凭借着对未来城市的深刻理解和对先进技术的熟练运用，全身心投入到项目的每一个环节。从城市的整体规划到每一栋建筑的细节设计，都融入了创新的理念和对未来生活方式的展望。</p>
-            <p>这座未来风城市拥有先进的交通系统，无人驾驶汽车在智能交通网络的指挥下有序行驶，空中飞行器和磁悬浮列车让出行变得更加高效便捷。城市中的建筑采用了新型的环保材料和智能技术，能够根据环境变化自动调节内部温度、湿度和采光，实现能源的高效利用。中央公园不仅是城市的绿肺，还集成了各种高科技互动设施，为居民提供了亲近自然和体验科技的绝佳场所。</p>
-            <a href="#">了解更多 <span>&#9658;</span></a>
-        </div>
-        <div class="about-image">
-            <img src="p1/2.jpg" alt="项目团队工作场景图">
-        </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer>
-        <p>联系电话: 123 - 456 - 7890</p>
-        <p>联系地址: XX 市 XX 区 XX 路 XX 号</p>
-        <p>社交媒体: <a href="#">Facebook</a> <a href="#">Instagram</a></p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
